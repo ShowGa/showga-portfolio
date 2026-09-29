@@ -1,5 +1,5 @@
 const lanOptions = [
-    { value: "zh", label: "中" },
+    { value: "zh-TW", label: "中" },
     { value: "en", label: "EN" },
 ];
 

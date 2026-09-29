@@ -1,9 +1,9 @@
 // index.js
 export const servicesData = [
     {
-        title: "Frontend Development",
+        title: "Frontend Development", // i18n key
         description:
-            "My interest in frontend development started with curiosity about how websites are built with code. I enjoy creating things and solving problems through programming. I started with Vanilla JavaScript, HTML, and CSS, then moved on to frontend frameworks such as React and Vue.",
+            "My interest in frontend development started with curiosity about how websites are built with code. I enjoy creating things and solving problems through programming. I started with Vanilla JavaScript, HTML, and CSS, then moved on to frontend frameworks such as React and Vue.", // i18n key
         items: [
             {
                 title: "React",
@@ -20,9 +20,9 @@ export const servicesData = [
         ],
     },
     {
-        title: "Backend Experience",
+        title: "Backend Experience", // i18n key
         description:
-            "As I learned more about frontend development, I became interested in how the backend works behind the scenes. I started learning Node.js to understand how frontend and backend communicate. Later, I joined a government-funded coding bootcamp where I learned Java and more about backend development.",
+            "As I learned more about frontend development, I became interested in how the backend works behind the scenes. I started learning Node.js to understand how frontend and backend communicate. Later, I joined a government-funded coding bootcamp where I learned Java and more about backend development.", // i18n key
         items: [
             {
                 title: "Node.js",
@@ -35,9 +35,9 @@ export const servicesData = [
         ],
     },
     {
-        title: "3D Development Experience",
+        title: "3D Development Experience", // i18n key
         description:
-            "As I became more interested in interactive web experiences, I started learning about 3D development. I learned Three.js through Bruno Simon's course (shout out to Bruno Simon what a great tutor) and explored the basics of creating and working with 3D scenes. I also learned the basic skills of Blender to create and edit 3D models.",
+            "As I became more interested in interactive web experiences, I started learning about 3D development. I learned Three.js through Bruno Simon's course (shout out to Bruno Simon what a great tutor) and explored the basics of creating and working with 3D scenes. I also learned the basic skills of Blender to create and edit 3D models.", //i18n key
         items: [
             {
                 title: "Three.js",
@@ -53,9 +53,9 @@ export const servicesData = [
 export const projects = [
     {
         id: 1,
-        name: "Food Waste Savior",
+        name: "Food Waste Savior", // i18n key
         description:
-            "A platform built to reduce food waste by connecting customers with local businesses that have surplus food that is still fresh and delicious. With a memorable brand identity, a friendly mascot, and a simple user experience, it creates a triple win for customers, merchants, and most importantly, the Earth.",
+            "A platform built to reduce food waste by connecting customers with local businesses that have surplus food that is still fresh and delicious. With a memorable brand identity, a friendly mascot, and a simple user experience, it creates a triple win for customers, merchants, and most importantly, the Earth.", // i18n key
         href: "https://github.com/ShowGa/FoodWasteSavior",
         image: "/assets/projects/foodwaste.webp",
         bgImage: "/assets/backgrounds/blanket.webp",
@@ -69,9 +69,9 @@ export const projects = [
     },
     {
         id: 2,
-        name: "Online Chess",
+        name: "Online Chess", // i18n key
         description:
-            "A real-time multiplayer chess game where two players can compete online and play against each other in real time. Players can also communicate through real-time text chat and send instant emoji reactions during the game, creating a more interactive and social gaming experience.",
+            "A real-time multiplayer chess game where two players can compete online and play against each other in real time. Players can also communicate through real-time text chat and send instant emoji reactions during the game, creating a more interactive and social gaming experience.", // i18n key
         href: "https://github.com/ShowGa/Play-Chess",
         image: "/assets/projects/chess.webp",
         bgImage: "/assets/backgrounds/poster.webp",
@@ -87,9 +87,9 @@ export const projects = [
     },
     {
         id: 3,
-        name: "ShowGa 3D room",
+        name: "ShowGa 3D room", // i18n key, keep the "ShowGa" as english in every json file, that's my name
         description:
-            "An interactive 3D website built with Three.js and GLSL, inspired by my idea of a dream room — a space for gaming, chilling, and working. It also features an embedded iframe of my online chess project, allowing users to play chess directly inside the 3D room.",
+            "An interactive 3D website built with Three.js and GLSL, inspired by my idea of a dream room — a space for gaming, chilling, and working. It also features an embedded iframe of my online chess project, allowing users to play chess directly inside the 3D room.", // i18n key
         href: "https://github.com/ShowGa/ShowGa_Room_ThreeJS",
         image: "/assets/projects/room.webp",
         bgImage: "/assets/backgrounds/curtains.webp",
@@ -104,9 +104,9 @@ export const projects = [
     },
     {
         id: 4,
-        name: "ShowGa Playing Card 3D E-commerce",
+        name: "ShowGa Playing Card 3D E-commerce", // i18n key
         description:
-            "A 3D e-commerce website for practicing vue and nuxt, designed to showcase the cards through interactive 3D visuals and animations. Users can explore the products from different angles, interact with the 3D cards, and enjoy a more immersive shopping experience.",
+            "A 3D e-commerce website for practicing vue and nuxt, designed to showcase the cards through interactive 3D visuals and animations. Users can explore the products from different angles, interact with the 3D cards, and enjoy a more immersive shopping experience.", // i18n key
         href: "https://github.com/ShowGa/Playing-Card-3D-E-commerce",
         image: "/assets/projects/playingcard.webp",
         bgImage: "/assets/backgrounds/map.webp",

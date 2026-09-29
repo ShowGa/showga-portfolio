@@ -13,7 +13,7 @@ i18n.use(Backend)
             lookupLocalStorage: "i18nextLng",
         },
         // ns,
-        defaultNS: "overview",
+        // defaultNS: "",
         backend: {
             loadPath: "/locales/{{lng}}/{{ns}}.json",
         },
