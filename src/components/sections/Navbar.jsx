@@ -174,9 +174,11 @@ const Navbar = () => {
                             {socials.map((social, index) => (
                                 <a
                                     key={index}
+                                    href={social.href}
+                                    target="_blank"
                                     className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
                                 >
-                                    {`{ ${social.name} }`}
+                                    {`${social.name}`}
                                 </a>
                             ))}
                         </p>

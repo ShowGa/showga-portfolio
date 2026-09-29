@@ -124,6 +124,10 @@ body {
     font-family: var(--font-amiamie);
 }
 
+a {
+    cursor: pointer;
+}
+
 button {
     cursor: pointer;
 }

@@ -1,6 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Planet } from "../component/Planet";
-import { Environment, Float, Lightformer } from "@react-three/drei";
+import { Environment, Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../component/AnimatedHeaderSection";
 import { ShowGaLogo } from "../component/ShowGaLogo";
@@ -15,7 +14,7 @@ const Hero = () => {
     return (
         <section id="home" className="flex flex-col justify-end min-h-screen">
             <AnimatedHeaderSection
-                subTitle={`404 No Bugs Found`}
+                subTitle={`Web developer focus on frontend`}
                 title={"ShowGa"}
                 text={aboutText}
                 textColor={"text-black"}

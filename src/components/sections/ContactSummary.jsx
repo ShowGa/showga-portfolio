@@ -3,13 +3,7 @@ import Marquee from "../component/Marquee";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const items = [
-    "Innovation",
-    "Precision",
-    "Trust",
-    "Collaboration",
-    "Excellence",
-];
+const items = ["Reliable", "Professional", "Collaboration", "Excellence"];
 const items2 = ["Contact Me", "Contact Me", "Contact Me", "Contact Me"];
 
 const ContactSummary = () => {

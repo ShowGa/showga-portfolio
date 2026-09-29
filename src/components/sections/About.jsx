@@ -6,7 +6,9 @@ import gsap from "gsap";
 
 const text = `ShowGa Hsiao here,
 Web developer focus on frontend,
-interesting in 3D and well design website`;
+interesting in 3D and well design website
+also a hardcore FPS gamer 
+and poker card trick learner`;
 
 const src = ["images/me.jpg", "images/me1.jpg", "images/me2.jpg"];
 
