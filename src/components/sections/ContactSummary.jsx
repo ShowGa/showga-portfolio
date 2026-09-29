@@ -32,13 +32,11 @@ const ContactSummary = () => {
             <div className="overflow-hidden font-light text-center contact-text-responsive">
                 <p>
                     " Let's build a <br />
-                    <span className="font-normal">memorable</span> &{" "}
+                    <span>memorable</span> &{" "}
                     <span className="italic">inspiring</span>
                     <br />
-                    web application <span className="text-gold">
-                        togother
-                    </span>{" "}
-                    "
+                    web application{" "}
+                    <span className="text-gold font-normal">togother</span> "
                 </p>
             </div>
 
