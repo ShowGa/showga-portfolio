@@ -14,7 +14,7 @@ import useI18nToScrollTriggerRefresh from "./hooks/useI18nToScrollTriggerRefresh
 
 const App = () => {
     // functional hook
-    useI18nToScrollTriggerRefresh();
+    useI18nToScrollTriggerRefresh(100);
 
     // loading state base on 3D model (3D model must been download within the loading)
     const { progress } = useProgress();
