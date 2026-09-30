@@ -7,32 +7,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AnimatedTextLine = ({ text, className }) => {
     const containerRef = useRef(null);
-    const lineRefs = useRef([]);
+    const lines = text.split("\n").filter((line) => line.trim() !== "");
 
-    const lines = text.split("\n").filter((line) => line.trim() !== ""); // return the array of lines that split by the next row
-
-    useGSAP(() => {
-        if (lineRefs.current.length > 0) {
-            gsap.from(lineRefs.current, {
+    useGSAP(
+        () => {
+            gsap.from(".line", {
                 y: 40,
                 opacity: 0,
                 duration: 1,
                 stagger: 0.3,
                 ease: "back.out",
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                },
+                scrollTrigger: { trigger: containerRef.current },
             });
-        }
-    });
+        },
+        { scope: containerRef, dependencies: [text], revertOnUpdate: true },
+    );
 
     return (
         <div ref={containerRef} className={className}>
             {lines.map((line, index) => (
                 <span
                     key={index}
-                    ref={(el) => (lineRefs.current[index] = el)}
-                    className="block leading-relaxed tracking-wide text-pretty"
+                    className="line block leading-relaxed tracking-wide text-pretty"
                 >
                     {line}
                 </span>
