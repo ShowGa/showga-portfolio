@@ -156,7 +156,7 @@ const Works = () => {
                         <div className="w-full h-[2px] bg-black/80"></div>
 
                         {/* framework */}
-                        <div className="flex px-10 text-xs leading-loose uppercase transition-all duration-500 md:text-sm gap-x-5 md:group-hover:px-12">
+                        <div className="flex flex-wrap px-10 text-xs leading-loose uppercase transition-all duration-500 md:text-sm gap-x-5 md:group-hover:px-12">
                             {project.frameworks.map((framework) => (
                                 <p
                                     key={framework.id}
