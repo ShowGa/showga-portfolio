@@ -3,12 +3,11 @@ import { Environment, Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../component/AnimatedHeaderSection";
 import { ShowGaLogo } from "../component/ShowGaLogo";
-
-const aboutText = `I like to build interesting things
-that touch people's feelings
-through visual design and interaction`;
+import useI18nHook from "../../hooks/useI18nHook";
 
 const Hero = () => {
+    const { t } = useI18nHook("section-Hero");
+    const aboutText = t("header.text");
     const isMobile = useMediaQuery({ maxWidth: 853 });
 
     return (

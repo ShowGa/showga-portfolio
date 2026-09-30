@@ -4,15 +4,13 @@ import AnimatedTextLine from "../component/AnimatedTextLine";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const text = `ShowGa Hsiao here,
-Web developer focus on frontend,
-interesting in 3D and well design website
-also a hardcore FPS gamer 
-and poker card trick learner`;
+import useI18nHook from "../../hooks/useI18nHook";
 
 const src = ["images/me.jpg", "images/me1.jpg", "images/me2.jpg"];
 
 const About = () => {
+    const { t } = useI18nHook("section-About");
+    const text = t("header.text");
     const imgRefs = useRef([]);
 
     useGSAP(() => {
@@ -71,7 +69,7 @@ const About = () => {
                                 imgRefs.current[index] = el;
                             }}
                             src={image}
-                            alt="man"
+                            alt={t("image.alt")}
                             className="w-full h-full rounded-3xl object-cover"
                         />
                     </div>

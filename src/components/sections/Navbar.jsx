@@ -3,10 +3,18 @@ import { socials } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-scroll";
-
-const navItem = ["home", "services", "about", "work", "contact"];
+import useI18nHook from "../../hooks/useI18nHook";
 
 const Navbar = () => {
+    const { t } = useI18nHook("section-Navbar");
+    const navItem = [
+        t("nav.home"),
+        t("nav.services"),
+        t("nav.about"),
+        t("nav.work"),
+        t("nav.contact"),
+    ];
+    const navKeys = ["home", "services", "about", "work", "contact"];
     // ref
     const navRef = useRef(null);
     const linkRef = useRef([]);
@@ -144,7 +152,7 @@ const Navbar = () => {
                         >
                             <Link
                                 className="transition-all duration-300 cursor-pointer hover:text-white"
-                                to={`${item}`}
+                                to={navKeys[index]}
                                 smooth
                                 offset={0}
                                 duration={2000}
@@ -161,14 +169,16 @@ const Navbar = () => {
                     className="flex flex-col flex-wrap justify-between gap-8 md:flex-row"
                 >
                     <div className="font-light">
-                        <p className="tracking-wider text-white/50">E-mail</p>
+                        <p className="tracking-wider text-white/50">
+                            {t("contact.email")}
+                        </p>
                         <p className="text-xl tracking-widest  lowercase text-pretty">
-                            mybigduck@gmail.com
+                            showgacareer@gmail.com
                         </p>
                     </div>
                     <div className="font-light">
                         <p className="tracking-wider text-white/50">
-                            Social Media
+                            {t("contact.socialMedia")}
                         </p>
                         <p className="flex flex-col flex-wrap md:flex-row gap-x-2">
                             {socials.map((social, index) => (

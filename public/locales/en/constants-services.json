@@ -1,0 +1,50 @@
+{
+    "services": [
+        {
+            "title": "Frontend Development",
+            "description": "My interest in frontend development started with curiosity about how websites are built with code. I enjoy creating things and solving problems through programming. I started with Vanilla JavaScript, HTML, and CSS, then moved on to frontend frameworks such as React and Vue.",
+            "items": [
+                {
+                    "title": "React",
+                    "description": "(Redux, Zustand, Axios, TanStack Query, i18n)"
+                },
+                {
+                    "title": "Vue",
+                    "description": "(Vue 3, Composition API, Vue Router, GSAP)"
+                },
+                {
+                    "title": "Nuxt",
+                    "description": "(Nuxt, SSR, SSG, Vue)"
+                }
+            ]
+        },
+        {
+            "title": "Backend Experience",
+            "description": "As I learned more about frontend development, I became interested in how the backend works behind the scenes. I started learning Node.js to understand how frontend and backend communicate. Later, I joined a government-funded coding bootcamp where I learned Java and more about backend development.",
+            "items": [
+                {
+                    "title": "Node.js",
+                    "description": "(Express, REST API, Axios, NoSQL)"
+                },
+                {
+                    "title": "Java",
+                    "description": "(Spring Boot, Spring MVC, MySQL)"
+                }
+            ]
+        },
+        {
+            "title": "3D Development Experience",
+            "description": "As I became more interested in interactive web experiences, I started learning about 3D development. I learned Three.js through Bruno Simon's course (shout out to Bruno Simon what a great tutor) and explored the basics of creating and working with 3D scenes. I also learned the basic skills of Blender to create and edit 3D models.",
+            "items": [
+                {
+                    "title": "Three.js",
+                    "description": "(WebGL, 3D scenes, animations, interactions)"
+                },
+                {
+                    "title": "Blender",
+                    "description": "(3D modeling, materials, basic scene setup)"
+                }
+            ]
+        }
+    ]
+}

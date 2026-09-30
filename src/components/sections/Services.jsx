@@ -5,14 +5,13 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-const text = `Learning new skills
-through the motivation to build things myself
-and seeing them come to life through each project`;
+import useI18nHook from "../../hooks/useI18nHook";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+    const { t } = useI18nHook(["section-Services", "constants-services"]);
+    const text = t("section-Services:header.text");
     const servicesRef = useRef([]);
     // const isDesktop = useMediaQuery({ minWidth: "48rem" }); // 768px
 
@@ -55,11 +54,15 @@ const Services = () => {
                     <div className="flex items-center justify-center gap-4 font-light">
                         <div className="flex flex-col gap-6">
                             <h2 className="text-4xl lg:text-5xl">
-                                {service.title}
+                                {t(
+                                    `constants-services:services.${index}.title`,
+                                )}
                             </h2>
 
                             <p className="text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60">
-                                {service.description}
+                                {t(
+                                    `constants-services:services.${index}.description`,
+                                )}
                             </p>
 
                             <div className="flex flex-col gap-2 text-2xl sm:gap-4 lg:text-2xl text-white/80">
@@ -69,7 +72,9 @@ const Services = () => {
                                             <span className="mr-12 text-lg text-white/30">
                                                 0{itemIndex + 1}
                                             </span>
-                                            {item.title}
+                                            {t(
+                                                `constants-services:services.${index}.items.${itemIndex}.title`,
+                                            )}
                                         </h3>
 
                                         {itemIndex < service.items.length && (

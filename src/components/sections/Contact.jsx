@@ -3,19 +3,19 @@ import { socials } from "../../constants";
 import AnimatedHeaderSection from "../component/AnimatedHeaderSection";
 import Marquee from "../component/Marquee";
 import gsap from "gsap";
-
-const text = `Whether you’re into frontend, design,
-or building for the web, I’d love to connect,
-exchange ideas, and create something meaningful together.`;
+import useI18nHook from "../../hooks/useI18nHook";
 
 const items = [
-    "Just Imagin, I code",
-    "Just Imagin, I code",
-    "Just Imagin, I code",
-    "Just Imagin, I code",
+    "Call Me Maybe",
+    "Call Me Maybe",
+    "Call Me Maybe",
+    "Call Me Maybe",
 ];
 
 const Contact = () => {
+    const { t } = useI18nHook("section-Contact");
+    const text = t("header.text");
+
     useGSAP(() => {
         gsap.from(".social-link", {
             y: 100,
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div className="flex px-10 font-light text-white uppercase lg:text-[2rem] text-[1.625rem] leading-none mb-10">
                     <div className="flex flex-col w-full gap-10">
                         <div className="social-link">
-                            <h2>E-mail</h2>
+                            <h2>{t("contact.email")}</h2>
                             <div className="w-full h-px my-2 bg-white/30" />
                             <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
                                 showgacareer@gmail.com
@@ -55,18 +55,15 @@ const Contact = () => {
                         </div>
 
                         <div className="social-link">
-                            <h2>Phone</h2>
+                            <h2>{t("contact.phone")}</h2>
                             <div className="w-full h-px my-2 bg-white/30" />
-                            <p
-                                className="text-xl lowercasemd
-                            md:text-2xl lg:text-3xl"
-                            >
-                                N/A
+                            <p className="text-xl lowercase md:text-2xl lg:text-3xl">
+                                {t("contact.notAvailable")}
                             </p>
                         </div>
 
                         <div className="social-link">
-                            <h2>Social Media</h2>
+                            <h2>{t("contact.socialMedia")}</h2>
                             <div className="w-full h-px my-2 bg-white/30" />
                             <div className="flex flex-wrap gap-2">
                                 {socials.map((social, index) => (

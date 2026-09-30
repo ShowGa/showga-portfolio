@@ -1,0 +1,50 @@
+{
+    "services": [
+        {
+            "title": "前端開發",
+            "description": "我對前端開發的興趣，始於對網站如何透過程式碼建構的好奇。我喜歡創作事物，也享受透過程式設計解決問題的過程。最初從 Vanilla JavaScript、HTML 和 CSS 開始學習，之後進一步接觸 React、Vue 等前端框架。",
+            "items": [
+                {
+                    "title": "React",
+                    "description": "(Redux, Zustand, Axios, TanStack Query, i18n)"
+                },
+                {
+                    "title": "Vue",
+                    "description": "(Vue 3, Composition API, Vue Router, GSAP)"
+                },
+                {
+                    "title": "Nuxt",
+                    "description": "(Nuxt, SSR, SSG, Vue)"
+                }
+            ]
+        },
+        {
+            "title": "後端開發經驗",
+            "description": "在深入學習前端開發的過程中，我開始對網站背後的後端運作方式產生興趣。我開始學習 Node.js，希望了解前端與後端之間如何進行溝通。後來，我參加了政府補助的程式設計培訓課程，學習 Java 以及更多後端開發相關的知識。",
+            "items": [
+                {
+                    "title": "Node.js",
+                    "description": "(Express, REST API, Axios, NoSQL)"
+                },
+                {
+                    "title": "Java",
+                    "description": "(Spring Boot, Spring MVC, MySQL)"
+                }
+            ]
+        },
+        {
+            "title": "3D 開發經驗",
+            "description": "隨著我對互動式網頁體驗越來越感興趣，我開始學習 3D 開發。我透過 Bruno Simon 的課程學習 Three.js（特別推薦 Bruno Simon，他是一位非常優秀的講師），並探索建立與操作 3D 場景的基礎知識。我也學習了 Blender 的基礎操作，能夠建立與編輯 3D 模型。",
+            "items": [
+                {
+                    "title": "Three.js",
+                    "description": "(WebGL, 3D scenes, animations, interactions)"
+                },
+                {
+                    "title": "Blender",
+                    "description": "(3D modeling, materials, basic scene setup)"
+                }
+            ]
+        }
+    ]
+}

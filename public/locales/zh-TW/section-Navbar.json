@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "home": "首頁",
+        "services": "技能",
+        "about": "關於ShowGa",
+        "work": "專案",
+        "contact": "聯絡資訊"
+    },
+    "contact": {
+        "email": "電子郵件",
+        "socialMedia": "社群帳號"
+    }
+}

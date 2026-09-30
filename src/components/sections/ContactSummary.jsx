@@ -2,11 +2,13 @@ import { useRef } from "react";
 import Marquee from "../component/Marquee";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import useI18nHook from "../../hooks/useI18nHook";
 
 const items = ["Reliable", "Professional", "Collaboration", "Excellence"];
 const items2 = ["Contact Me", "Contact Me", "Contact Me", "Contact Me"];
 
 const ContactSummary = () => {
+    const { t } = useI18nHook("section-ContactSummary");
     const containerRef = useRef(null);
 
     useGSAP(() => {
@@ -29,14 +31,17 @@ const ContactSummary = () => {
         >
             {/* marquee */}
             <Marquee items={items} />
-            <div className="overflow-hidden font-light text-center contact-text-responsive">
+            <div className="font-light text-center contact-text-responsive">
                 <p>
-                    " Let's build a <br />
-                    <span>memorable</span> &{" "}
-                    <span className="italic">inspiring</span>
+                    {t("text.line1")} <br />
+                    <span>{t("text.memorable")}</span> &{" "}
+                    <span className="italic">{t("text.inspiring")}</span>
                     <br />
-                    web application{" "}
-                    <span className="text-gold font-normal">togother</span> "
+                    {t("text.line2")}{" "}
+                    <span className="text-gold font-normal">
+                        {t("text.together")}
+                    </span>{" "}
+                    {t("text.quoteEnd")}
                 </p>
             </div>
 

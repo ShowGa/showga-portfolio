@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "name": "Food Waste Savior",
+            "description": "A platform built to reduce food waste by connecting customers with local businesses that have surplus food that is still fresh and delicious. With a memorable brand identity, a friendly mascot, and a simple user experience, it creates a triple win for customers, merchants, and most importantly, the Earth."
+        },
+        {
+            "name": "Online Chess",
+            "description": "A real-time multiplayer chess game where two players can compete online and play against each other in real time. Players can also communicate through real-time text chat and send instant emoji reactions during the game, creating a more interactive and social gaming experience."
+        },
+        {
+            "name": "ShowGa 3D room",
+            "description": "An interactive 3D website built with Three.js and GLSL, inspired by my idea of a dream room — a space for gaming, chilling, and working. It also features an embedded iframe of my online chess project, allowing users to play chess directly inside the 3D room."
+        },
+        {
+            "name": "ShowGa Playing Card 3D E-commerce",
+            "description": "A 3D e-commerce website for practicing vue and nuxt, designed to showcase the cards through interactive 3D visuals and animations. Users can explore the products from different angles, interact with the 3D cards, and enjoy a more immersive shopping experience."
+        }
+    ]
+}

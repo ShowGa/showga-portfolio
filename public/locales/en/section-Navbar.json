@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "home": "home",
+        "services": "services",
+        "about": "about",
+        "work": "work",
+        "contact": "contact"
+    },
+    "contact": {
+        "email": "E-mail",
+        "socialMedia": "Social Media"
+    }
+}

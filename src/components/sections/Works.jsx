@@ -4,12 +4,11 @@ import { projects } from "../../constants";
 import { Icon } from "@iconify/react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-
-const text = `A collection of things I've built,
-exploring ideas, learning knowledges, technologies,
-and interactive experiences through each project.`;
+import useI18nHook from "../../hooks/useI18nHook";
 
 const Works = () => {
+    const { t } = useI18nHook(["section-Works", "constants-projects"]);
+    const text = t("section-Works:header.text");
     const previewRef = useRef(null);
     const moveX = useRef(null); // gsap quickTo()
     const moveY = useRef(null); // gsap quickTo()
@@ -144,7 +143,7 @@ const Works = () => {
                         {/* title */}
                         <div className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-gold">
                             <h2 className="lg:text-[2rem] text-[1.625rem]">
-                                {project.name}
+                                {t(`constants-projects:projects.${index}.name`)}
                             </h2>
 
                             <Icon
