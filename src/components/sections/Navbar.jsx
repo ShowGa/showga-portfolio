@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 import useI18nHook from "../../hooks/useI18nHook";
 
 const Navbar = () => {
-    const { t } = useI18nHook("section-Navbar");
+    const { t, i18n, switchLang } = useI18nHook("section-Navbar");
     const navItem = [
         t("nav.home"),
         t("nav.services"),
@@ -137,11 +137,32 @@ const Navbar = () => {
                 ref={navRef}
                 className="fixed z-50 flex flex-col justify-between w-full h-full px-10 uppercase bg-black text-white/80 py-28 gap-y-10 md:w-1/2 md:left-1/2"
             >
-                {/* <div className="flex gap-5">
-                    <button className="text-white/30">中文</button>
-                    <div> | </div>
-                    <button>EN</button>
-                </div> */}
+                {/* Language Button */}
+                <div className="flex gap-5">
+                    <button
+                        className={`transition-colors duration-300 ${
+                            i18n.language === "zh-TW"
+                                ? "text-white"
+                                : "text-white/30"
+                        }`}
+                        onClick={() => switchLang("zh-TW")}
+                    >
+                        中
+                    </button>
+
+                    <div>|</div>
+
+                    <button
+                        className={`transition-colors duration-300 ${
+                            i18n.language === "en"
+                                ? "text-white"
+                                : "text-white/30"
+                        }`}
+                        onClick={() => switchLang("en")}
+                    >
+                        EN
+                    </button>
+                </div>
 
                 {/* Navbar Item */}
                 <div className="flex flex-col text-5xl gap-y-2 md:text-5xl lg:text-7xl">
