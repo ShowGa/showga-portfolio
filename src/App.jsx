@@ -7,10 +7,15 @@ import About from "./components/sections/About";
 import Works from "./components/sections/Works";
 import ContactSummary from "./components/sections/ContactSummary";
 import Contact from "./components/sections/Contact";
+// hook
 import { useProgress } from "@react-three/drei";
 import { useEffect, useState } from "react";
+import useI18nToScrollTriggerRefresh from "./hooks/useI18nToScrollTriggerRefresh";
 
 const App = () => {
+    // functional hook
+    useI18nToScrollTriggerRefresh();
+
     // loading state base on 3D model (3D model must been download within the loading)
     const { progress } = useProgress();
 
