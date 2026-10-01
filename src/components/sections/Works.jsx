@@ -141,7 +141,7 @@ const Works = () => {
                         />
 
                         {/* title */}
-                        <div className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-gold">
+                        <div className="flex justify-between items-center px-10 text-black transition-all duration-500 md:items-start md:group-hover:px-12 md:group-hover:text-gold">
                             <h2 className="lg:text-[2rem] text-[1.625rem]">
                                 {t(`constants-projects:projects.${index}.name`)}
                             </h2>
@@ -168,20 +168,19 @@ const Works = () => {
                         </div>
 
                         {/* mobile preview images */}
-                        <div className="relative flex items-center justify-center px-10 md:hidden h-100">
-                            <div className="w-full h-full">
-                                <img
-                                    src={project.bgImage}
-                                    alt={`${project.name}-project background image`}
-                                    className="object-cover w-full h-full rounded-md brightness-50"
+                        <div className="relative flex items-center justify-center px-5 md:hidden">
+                            <div className="relative h-fit w-full rounded-md p-4 overflow-hidden">
+                                <div
+                                    className="absolute inset-0 bg-cover bg-center brightness-50"
+                                    style={{
+                                        backgroundImage: `url(${project.bgImage})`,
+                                    }}
                                 />
-                            </div>
 
-                            <div className="absolute bg-center px-14">
                                 <img
                                     src={project.image}
                                     alt={`${project.name}-image`}
-                                    className="object-cover rounded-md"
+                                    className="relative z-10 object-cover rounded-md"
                                 />
                             </div>
                         </div>
@@ -207,3 +206,44 @@ const Works = () => {
 };
 
 export default Works;
+
+/*
+========= Deleted Code ==========
+<div className="relative flex items-center justify-center px-10 md:hidden">
+    <div className="h-full w-full">
+        <img
+            src={project.bgImage}
+            alt={`${project.name}-project background image`}
+            className="object-cover w-full h-full rounded-md brightness-50"
+        />
+    </div>
+
+    <div className="absolute bg-center px-14">
+        <img
+            src={project.image}
+            alt={`${project.name}-image`}
+            className="object-cover rounded-md"
+        />
+    </div>
+</div> 
+
+<div
+    className="relative flex items-center justify-center px-10 md:hidden bg-cover bg-center rounded-md
+    before:absolute 
+    before:inset-0 before:bg-black/50 
+    before:rounded-md"
+    style={{
+        backgroundImage: `url(${project.bgImage})`,
+    }}
+>
+    <div className="relative z-10 h-full w-full">
+        <img
+            src={project.image}
+            alt={`${project.name}-image`}
+            className="object-cover rounded-md"
+        />
+    </div>
+</div>
+
+
+*/
