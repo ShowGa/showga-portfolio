@@ -34,7 +34,7 @@ const Hero = () => {
                 >
                     <ambientLight intensity={0.5} />
 
-                    <Float speed={0.5} floatIntensity={2}>
+                    <Float speed={1.5} floatIntensity={2}>
                         <ShowGaLogo scale={isMobile ? 1.4 : 2.4} />
                     </Float>
 
