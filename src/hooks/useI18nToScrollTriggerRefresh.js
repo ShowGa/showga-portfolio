@@ -16,9 +16,11 @@ const useI18nToScrollTriggerRefresh = (delay = 300) => {
             }, delay);
         };
 
+        i18n.on("loaded", refresh);
         i18n.on("languageChanged", refresh);
 
         return () => {
+            i18n.off("loaded", refresh);
             i18n.off("languageChanged", refresh);
         };
     }, [i18n, delay]);
