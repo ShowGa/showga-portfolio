@@ -2,26 +2,23 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const useI18nToScrollTriggerRefresh = (delay) => {
+let timer;
+
+const useI18nToScrollTriggerRefresh = (delay = 300) => {
     const { i18n } = useTranslation();
 
     useEffect(() => {
-        let timer;
-
         const refresh = () => {
-            clearTimeout(timer);
+            if (timer) clearTimeout(timer);
 
             timer = setTimeout(() => {
-                requestAnimationFrame(() => ScrollTrigger.refresh());
+                ScrollTrigger.refresh(true);
             }, delay);
         };
 
-        i18n.on("loaded", refresh);
         i18n.on("languageChanged", refresh);
 
         return () => {
-            clearTimeout(timer);
-            i18n.off("loaded", refresh);
             i18n.off("languageChanged", refresh);
         };
     }, [i18n, delay]);
