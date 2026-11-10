@@ -50,7 +50,7 @@ const Contact = () => {
                             <h2>{t("contact.email")}</h2>
                             <div className="w-full h-px my-2 bg-white/30" />
                             <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
-                                showgacareer@gmail.com
+                                -
                             </p>
                         </div>
 

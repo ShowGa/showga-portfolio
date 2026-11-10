@@ -194,7 +194,7 @@ const Navbar = () => {
                             {t("contact.email")}
                         </p>
                         <p className="text-xl tracking-widest  lowercase text-pretty">
-                            showgacareer@gmail.com
+                            -
                         </p>
                     </div>
                     <div className="font-light">
